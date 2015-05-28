@@ -1,6 +1,8 @@
 
 
-# Getting Started with Python + OpenCV on OSX
+# Getting Started with Python and OpenCV
+
+## Installation on OSX
 
 	# install homebrew
 	brew tap homebrew/science
