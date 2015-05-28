@@ -31,11 +31,10 @@ def main():
 		    contours, hierarchy = cv2.findContours(threshold_image, cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
 		    # get one of the contour drawing functions
-		    # drawingFunction = modes[mode]
-		    drawAllContours(contours=contours, frame=image)
-
+		    drawingFunction = modes[mode]
+		    
 		    # apply the function
-		    # drawingFunction(image, contours)
+		    drawingFunction(image, contours)
 
 		    # show the image in the window
 		    cv2.imshow(title, image)
